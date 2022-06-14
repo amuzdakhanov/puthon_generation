@@ -23,3 +23,10 @@ Sample Input 2:
 
 987654
 """
+n = input()
+len_n = len(n)
+
+if len_n == 5:
+    print(int(n[::-1]))
+elif len_n == 6:
+    print(n[0]+n[:-6:-1])
