@@ -25,12 +25,14 @@
 #list1 = [[1], [1,1], [1,2,1], [1,3,3,1], [1,4,6,4,1]]
 n = int(input())
 box = []
-for i in range(n):
+for i in range(n+1):
     tmp = []
     for j in range(i+1):
         if j == 0 or j == i:
             tmp.append(1)
         else:
-
+            tmp.append(box[i-1][j-1]+box[i-1][j])
+    box.append(tmp)
+print(box[-1][:])
 
 
