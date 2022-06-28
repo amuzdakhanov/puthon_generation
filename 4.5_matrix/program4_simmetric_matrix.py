@@ -12,3 +12,4 @@ for i in range(n):
             flag = 'NO'
             break
 print(flag)
+
